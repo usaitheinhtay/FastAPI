@@ -1,7 +1,5 @@
 from motor.motor_asyncio import AsyncIOMotorClient
-from config import MysqlConfig
-import mysql.connector
+from config import MongoConfig
 
-client = AsyncIOMotorClient(mysql.connector.connect.MysqlConfig)
-
-db = client[MysqlConfig.Db_Name]
+client = AsyncIOMotorClient(MongoConfig.MongoUri)
+db = client[MongoConfig.MongoDb]

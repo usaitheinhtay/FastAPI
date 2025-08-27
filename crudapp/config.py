@@ -3,6 +3,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-class MysqlConfig:
-    MongoDb_Uri = os.getenv("mysqluri")
-    MongoDb_Name = os.getenv("DbName")
+class MongoConfig:
+    MongoUri = os.getenv("MongoUri")
+    MongoDb = os.getenv("MongoDb")
