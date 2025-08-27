@@ -3,18 +3,19 @@ from typing import Optional
 
 
 
+# --- Pydantic Schemas ---
 class UserCreate(BaseModel):
-    name : str
+    name: str
     email: str
     password: str
 
 class UserResponse(BaseModel):
-    id:str
-    name:str
-    email:str
-    password:str
+      name: str
+      email: str
 
 class UserUpdate(BaseModel):
-    name: Optional[str]=None
-    email: Optional[str]=None
-    password: Optional[str]=None
+    name: Optional[str] = None
+    email: Optional[str] = None
+    password: Optional[str] = None
+
+
