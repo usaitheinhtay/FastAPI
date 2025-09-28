@@ -1,7 +1,7 @@
-from app.db import db
-from app.models.user import UserRegister
+from ..db import db_name
+from ..models.user import UserRegister
 
-user_collection = db["users"]
+user_collection = db_name["users"]
 
 
 async  def register_user(user: UserRegister):

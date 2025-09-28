@@ -10,7 +10,7 @@ class UserRegister(BaseModel):
     updated_at: Optional[datetime] = datetime.now()
 
 class UserLogin(BaseModel):
-    name: str
+    email: str
     password: str
 
 
